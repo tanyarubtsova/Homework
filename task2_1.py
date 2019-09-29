@@ -1,5 +1,6 @@
+## task 2, program 1
 s = input()
-maxk = 0
+max_k = 0
 for i in range(len(s) // 2):
     k = 1
     for j in range(i + 1, len(s), i + 1):
@@ -8,6 +9,7 @@ for i in range(len(s) // 2):
         else:
             k = 1
             break
-    if k > maxk:
-        maxk = k
-print(maxk)
+    if k > max_k:
+        max_k = k
+print(max_k)
+
