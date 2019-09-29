@@ -1,10 +1,13 @@
+'''
+ task 2, program 2
+'''
 d = dict()
 s = input()
 while s != "":
     s += ' '
     word = ''
     for i in s.split(' '):
-        if d.get(i) == None:
+        if d.get(i) is None:
             d[i] = 1
         else:
             d[i] += 1

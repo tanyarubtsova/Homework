@@ -1,4 +1,4 @@
-## task 2, program 1
+# task 2, program 1
 s = input()
 max_k = 0
 for i in range(len(s) // 2):

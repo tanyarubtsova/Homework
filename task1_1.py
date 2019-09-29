@@ -1,3 +1,6 @@
+'''
+task 1, program 1
+'''
 class Node:
     def __init__(self, key=None, next=None):
         self.key = key
