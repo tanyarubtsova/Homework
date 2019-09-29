@@ -3,12 +3,10 @@ class Node:
     def __init__(self, key = None, next = None):
         self.key = key
         self.next = next
-
 class MyList:
     def __init__(self):
         self.first = None
         self.last = None
-
     def add_node(self, a):
         if self.first == None:
             self.first = Node(a, None)
@@ -17,13 +15,11 @@ class MyList:
             old_node = self.last
             self.last = Node(a, None)
             old_node.next = self.last
-
     def find_node(self, a):
         curr = self.first
         while a != curr.key:
             curr = curr.next
         return curr
-
     def del_node(self, i):
         if self.first == None:
             return
@@ -41,13 +37,11 @@ class MyList:
             prev = curr
             curr = curr.next
             count += 1
-
     def print_list(self):
         curr = self.first
         while curr != None:
             print(str(curr.key) + ' ', end=' ')
             curr = curr.next
-
 def func(a):
 	l = MyList()
 	while(a != 0):
