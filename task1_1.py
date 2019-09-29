@@ -1,7 +1,8 @@
 class Node:
-    def __init__(self, key = None, next = None):
+    def __init__(self, key=None, next=None):
         self.key = key
         self.next = next
+
 
 class MyList:
     def __init__(self):
@@ -46,20 +47,27 @@ class MyList:
         while curr != None:
             print(str(curr.key) + ' ', end=' ')
             curr = curr.next
+        print()
+
 
 def func(a):
-	l = MyList()
-	for i in a.rsplit():
-		l.add_node(i)
-	return l
-	
-a = input()   
+    l = MyList()
+    while a != '':
+        key = a[-1]
+        a = a[0:-1]
+        l.add_node(key)
+    return l
+
+
+a = input()
 l = func(a)
 l.print_list()
-#print()
-#l = MyList()
-#for i in range(3):
-    #l.add_node(int(input()))
-##3#l.del_node(2)
-###l.del_node(0)
-####l.print_list()
+'''
+l = MyList()
+for i in range(3):
+    l.add_node(input())
+l.print_list()
+l.del_node(2)
+l.del_node(0)
+l.print_list()
+'''
