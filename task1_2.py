@@ -1,3 +1,4 @@
+'''
 class Node:
     def __init__(self, key = None, next = None):
         self.key = key
@@ -53,6 +54,8 @@ def func(a):
 		l.add_node(a % 10)
 		a = a // 10
 	return l
+'''
+from task1_1 import *
 	
 def sum(a1, b1):
 	c = MyList()
